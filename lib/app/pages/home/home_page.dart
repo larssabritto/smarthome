@@ -12,7 +12,7 @@ class _HomepageState extends State<Homepage> {
   final double horizontalPadding = 40;
   final double verticalPadding = 25;
 
-  List SmartDevices = [
+  List smartDevices = [
     ['Smart TV', "assets/images/icons/smart-tv.png",true],
     ['Smart Air', "assets/images/icons/air.png",false],
     ['Smart Light',"assets/images/icons/light.png",false],
@@ -22,7 +22,7 @@ class _HomepageState extends State<Homepage> {
 
   void powerSwitchChanged(bool value, int index) {
     setState(() {
-      SmartDevices[index][2] = value;
+      smartDevices[index][2] = value;
     });
   }
 
@@ -43,7 +43,7 @@ class _HomepageState extends State<Homepage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   InkWell(
-                    borderRadius: BorderRadius.circular(60),
+                    borderRadius: BorderRadius.circular(80),
                     onTap: () {},
                     child: Image.asset(
                       "assets/images/icons/menu.png",
@@ -51,12 +51,13 @@ class _HomepageState extends State<Homepage> {
                       color: const Color(0xff08182A),
                     ),
                   ),
-                  IconButton(onPressed: () {} ,
-                    icon: const Icon(
-                      Icons.person,
-                      size: 45,
+                  InkWell(
+                    onTap: () {},
+                    child: Image.asset(
+                      "assets/images/icons/avatar.png",
+                      height: 50,
+
                     ),
-                    color: const Color(0xff08182A),
                   ),
                 ],
               ),
@@ -98,7 +99,7 @@ class _HomepageState extends State<Homepage> {
             ),
             const SizedBox(height: 10),
             Expanded(child: GridView.builder(
-                itemCount: SmartDevices.length,
+                itemCount: smartDevices.length,
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
@@ -106,9 +107,9 @@ class _HomepageState extends State<Homepage> {
                 ),
                 itemBuilder: (context, index) {
                   return SmartDeviceBox(
-                    iconPath: SmartDevices[index] [1],
-                    smartDeviceName: SmartDevices [index] [0],
-                    ligar: SmartDevices [index] [2],
+                    iconPath: smartDevices[index] [1],
+                    smartDeviceName: smartDevices [index] [0],
+                    ligar: smartDevices [index] [2],
                     onChanged: (value) => powerSwitchChanged(value, index),
                   );
                 }
