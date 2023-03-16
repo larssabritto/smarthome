@@ -66,12 +66,9 @@ header(BuildContext context) {
       children: [
         Align(
           alignment: Alignment.center,
-          child: Positioned(
-            top: 200,
-            child: Image.asset(
-              'assets/images/icons/home.png',
-              width: 100,
-            ),
+          child: Image.asset(
+            'assets/images/icons/home.png',
+            width: 100,
           ),
         ),
         const SizedBox(
