@@ -62,36 +62,34 @@ circle(String image) {
 header(BuildContext context) {
   return Padding(
     padding: const EdgeInsets.only(top: 100.0, left: 20, right: 20),
-    child: SingleChildScrollView(
-      child: Column(
-        children: [
-          Align(
-            alignment: Alignment.center,
-            child: Positioned(
-              top: 200,
-              child: Image.asset(
-                'assets/images/icons/home.png',
-                width: 100,
-              ),
+    child: Column(
+      children: [
+        Align(
+          alignment: Alignment.center,
+          child: Positioned(
+            top: 200,
+            child: Image.asset(
+              'assets/images/icons/home.png',
+              width: 100,
             ),
           ),
-          const SizedBox(
-            height: 20,
+        ),
+        const SizedBox(
+          height: 20,
+        ),
+        const Text(
+          'Bem-vindo ao Smart Home!',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 32,
+            fontWeight: FontWeight.w500,
           ),
-          const Text(
-            'Bem-vindo ao Smart Home!',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 32,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-          const SizedBox(
-            height: 50,
-          ),
-          form(context)
-        ],
-      ),
+        ),
+        const SizedBox(
+          height: 50,
+        ),
+        form(context)
+      ],
     ),
   );
 }
@@ -202,6 +200,7 @@ form(BuildContext context) {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 InkWell(
+                  borderRadius: BorderRadius.circular(40),
                   onTap: () {},
                   child: Image.asset('assets/images/icons/google.png',
                     height: 35,

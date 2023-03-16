@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Smart Home',
       theme: ThemeData(primaryColor: ThemeColors.primaryColor, fontFamily: 'PTSans'),
-      home: const LoginPage(),
+      home: const Scaffold(
+          body: LoginPage()),
     );
   }
 }

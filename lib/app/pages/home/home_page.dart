@@ -43,6 +43,7 @@ class _HomepageState extends State<Homepage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   InkWell(
+                    borderRadius: BorderRadius.circular(60),
                     onTap: () {},
                     child: Image.asset(
                       "assets/images/icons/menu.png",
