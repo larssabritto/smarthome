@@ -2,7 +2,6 @@
     package="com.penseapp.flutterfire_smarthome">
    <application
         android:label="flutterfire_smarthome"
-        android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
