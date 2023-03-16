@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "653104946293",
+    "project_id": "smarthome-e2234",
+    "storage_bucket": "smarthome-e2234.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653104946293:android:b46f34587f0dcd91222c3c",
+        "android_client_info": {
+          "package_name": "com.penseapp.flutterfire_smarthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653104946293-nuimnjpfe80kllabiolupv5iu5npjqh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf2qPym8Gqp8fHy7PwvwY1LuHblqi_idI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653104946293-nuimnjpfe80kllabiolupv5iu5npjqh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

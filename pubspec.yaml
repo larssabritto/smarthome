@@ -1,0 +1,48 @@
+name: smart_home
+description: Aplicativo automacao residencial.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.1 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  floor: ^1.4.1
+  flutter_mobx:
+  flutter_modular:
+  google_fonts: ^3.0.1
+  shared_preferences: ^2.0.17
+  mask_text_input_formatter: ^2.4.0
+  reflectable: ^4.0.4
+  sqflite: ^2.2.4+1
+
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^4.2.10
+  firebase_core: ^2.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/icons/air.png
+    - assets/images/icons/fan.png
+    - assets/images/icons/light.png
+    - assets/images/icons/menu.png
+    - assets/images/icons/smart-tv.png
+    - assets/images/icons/logo-icon.png
+    - assets/images/icons/home.png
+    - assets/images/icons/bg-blur-1.png
+    - assets/images/icons/bg-blur-2.png
+    - assets/images/icons/bg-blur-3.png
+    - assets/images/icons/alexa.png
+    - assets/images/icons/google.png
