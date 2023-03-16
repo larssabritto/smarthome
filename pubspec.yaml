@@ -29,10 +29,18 @@ dependencies:
 
 
 flutter_native_splash:
-    color: "0xff08182A"
-    image: "assets/images/icons/home.png"
-    android: true
-    ios: true
+  color: "#3F51B5"
+  image: "assets/images/icons/home.png"
+  android: true
+  ios: true
+
+flutter_icons:
+  image_path: "assets/images/icons/play-store.png"
+  ios: true
+  remove_alpha_ios: true
+  android: "launcher_icon"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/icons/play-store.png"
 
 
 dev_dependencies:
@@ -58,3 +66,5 @@ flutter:
     - assets/images/icons/alexa.png
     - assets/images/icons/google.png
     - assets/images/icons/avatar.png
+    - assets/images/icons/play-store.png
+    - assets/images/icons/appstore.png
